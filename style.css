@@ -1,5 +1,52 @@
+:root {
+    --wp-gray: #202C36;
+}
+
 html, body {
     padding: 0; margin: 0;
     background-color: #111;
     color: aliceblue;
+    font-family: Helvetica, sans-serif;
+}
+
+.layout {
+    display: grid;
+    gap: 16px;
+    height: 100vh;
+    place-content: center;
+    place-items: center;
+}
+
+#text-bubble {
+    padding: 10px 16px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    width: clamp(280px, 72vw, 480px);
+    background-color: #202C36;
+    position: relative;
+}
+
+#text-bubble::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -12px;
+    right: 0;
+    top: 0px;
+    border: 10px solid;
+	border-color: var(--wp-gray, #202C36) var(--wp-gray, #202C36) transparent transparent;
+}
+
+button {
+    margin-bottom: 6vh;
+    width: 200px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #04ad91;
+    font-weight: bold;
+    font-size: 0.88em;
+    font-family: inherit;
 }
