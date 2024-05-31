@@ -2,8 +2,8 @@ const generatorBt = document.getElementById('generator');
 const resultHolder = document.getElementById('result');
 generatorBt.onclick = generateExcuse
 
-const activities = ["un desfile", "una manifestación"];
-const participants = ["bomberos", "enanos", "payasos", "evangélicos", "reggaetoneros"];
+const activities = ["un desfile", "una manifestación", "un concurso", "una caravana", "una protesta", "una marcha", "un concurso de baile", "una rifa"];
+const participants = ["bomberos", "enanos", "payasos", "evangélicos", "reggaetoneros", "prostitutas", "narcos", "marihuanos", "botargas", "Dr. Simis", "la USAC", "viejitas", "viejitas sabrosas", "edecanes"];
 
 function generateExcuse(){
     const i = random(activities.length);
